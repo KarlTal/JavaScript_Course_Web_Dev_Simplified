@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src ="DOM_traversal.js"></script>
+    <style>
+        div {
+            color: black;
+        }
+        div > div {
+            margin-left: .5rem;
+            padding-left: .25rem;
+            border-left: 1px solid #777;
+        }
+    </style>
+</head>
+<body>
+<!---    
+<div data-test> This has a data attribute</div>
+<div class = "div-class"> This has a class</div>
+<div class = "div-class"> This has a class</div>
+<input type = "text">
+--->
+<!-- <form data-form>
+    <button data-btn type="submit"> Click Me </button>
+    <input data-input-text type = "text"/>
+</form>
+<br>
+<a data-anchor href = "https://www.youtube.com/">Go to youtube</a> -->
+<!-- <button data-btn> Click me</button> -->
+<!-- <button data-test="1234" data-test-two="3">1</button> -->
+<!-- <button data-clicks = "0">1</button>
+<button data-clicks = "0">2</button>
+<button data-clicks = "0">3</button> -->
+
+<div id = "grand-parent">
+
+    Grand Parent
+    <div>
+        Parent 1
+        <div id ="child-one">Child 1</div>
+        <div class = "child">Child 2</div>
+        <div class = "child">Child 2</div>
+    </div>
+    <div> Parent 2 </div>
+</div>
+</body>
+</html>

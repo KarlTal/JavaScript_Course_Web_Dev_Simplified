@@ -24,7 +24,6 @@ console.log(document.cookie);
 //Adding a second cookie
 document.cookie = `age=25;expires= ${date}`;
 
-
 //Delete a cookie, need to reset and set with a blank value and expiration in the ast
 const pastDate = new Date(2022, 0, 1).toUTCString();
 document.cookie = `name=;expires=${pastDate}`;
